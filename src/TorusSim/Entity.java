@@ -1,11 +1,11 @@
 package TorusSim;
 
 public class Entity {
-	private Position position;//怎么感觉不用啊
+	private Position position;
 	private int ID;
 	private int EntPhase = 0;
 	
-	private boolean sawNoOne = false;//貌似没用啊
+	private boolean sawNoOne = false;
 	private boolean sawSmaller = false;
 	private boolean seenBy = false;
 	private boolean finalMark = false;
@@ -13,12 +13,8 @@ public class Entity {
 	private int sawID;
 	private int sawDist;
 	private int sawDir;
-	private int seenByPhase = 0;//each entity can only relay one seenBySmaller in each phase.
-	/*public Entity(Position pos, int ID)
-	{
-		this.position = pos;
-		this.ID = ID;
-	}*/
+	private int seenByPhase = 0; //each entity can only relay one seenBySmaller in each phase.
+
 	public boolean isSawNoOne() {
 		return sawNoOne;
 	}
