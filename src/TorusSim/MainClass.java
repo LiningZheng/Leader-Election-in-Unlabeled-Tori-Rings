@@ -8,16 +8,16 @@ import java.io.PrintStream;
 public class MainClass {
 	public static void main(String[] args)  
 	{
-		test_Param_Com();
+		test_Param_Com(args[0], args[1]);
 		
 	}
-	public static void test_Param_Com()
+	public static void test_Param_Com(String filePath1, String filePath2)
 	{
 		try
 		{
 		int sideLeng = 50;
-		FileOutputStream fs1 = new FileOutputStream(new File("E:\\GANSHENME\\TEST1\\text1.txt"));
-		FileOutputStream fs2 = new FileOutputStream(new File("E:\\GANSHENME\\TEST1\\text2.txt"));
+		FileOutputStream fs1 = new FileOutputStream(new File(filePath1));
+		FileOutputStream fs2 = new FileOutputStream(new File(filePath2));
 		PrintStream p1 = new PrintStream(fs1);
 		PrintStream p2 = new PrintStream(fs2);
 		double starterP = 1.02;
@@ -49,12 +49,12 @@ public class MainClass {
 		}
 		
 	}
-	public static void testN_Com()
+	public static void testN_Com(String filePath1, String filePath2)
 	{
 		try
 		{
-		FileOutputStream fs1 = new FileOutputStream(new File("E:\\GANSHENME\\TEST1\\text1.txt"));
-		FileOutputStream fs2 = new FileOutputStream(new File("E:\\GANSHENME\\TEST1\\text2.txt"));
+		FileOutputStream fs1 = new FileOutputStream(new File(filePath1));
+		FileOutputStream fs2 = new FileOutputStream(new File(filePath2));
 		PrintStream p1 = new PrintStream(fs1);
 		PrintStream p2 = new PrintStream(fs2);
 		double growParameter = 1.1795;
@@ -77,11 +77,11 @@ public class MainClass {
 		
 		
 	}
-	public static void testPrint()
+	public static void testPrint(String filePath)
 	{
 		FileOutputStream fs3;
 		try {
-			fs3 = new FileOutputStream(new File("E:\\text3.txt"));
+			fs3 = new FileOutputStream(new File(filePath));
 			PrintStream p3 = new PrintStream(fs3);
 			for (int i = 1 ; i<50; i++)
 			{
