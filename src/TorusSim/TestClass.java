@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
-public class MainClass {
+public class TestClass {
 	public static void main(String[] args)  
 	{
 		test_Param_Com(args[0], args[1]);
